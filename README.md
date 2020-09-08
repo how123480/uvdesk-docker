@@ -17,6 +17,7 @@ $mkdir src
 ```
 
 2. Edit your database configuration in docker-compose.yml
+
 	There is a default user, root, with admin privilege. You can change its password and datebase name by edit **MYSQL_ROOT_PASSWORD** and **MYSQL_DATABASE**. If you want to add otehr user, plz refer https://hub.docker.com/_/mysql
 
 3. Download the source code of uvdesk
@@ -43,12 +44,15 @@ $docker exec -d uvdesk_uvdesk_web_1 sh
 $php /var/www/html/uvdesk-community-v1.0.12/bin/console uvdesk:configure-helpdesk
 ```
 7. Following steps can refer the installation guide of uvdesk (step2)
+
 	https://docs.uvdesk.com/uvdemo/installation/installation-ubuntu.html
 
 8. Mail service setup
+
 	https://www.uvdesk.com/en/blog/setup-mailbox-uvdesk-open-source-helpdesk/
 
 9. Trouble shooting
+
 	If you encounter some error, you can refer this link https://www.uvdesk.com/en/blog/open-source-helpdesk-installation-on-ubuntu-uvdesk/
     
 ## reference
