@@ -24,7 +24,7 @@ $mkdir src
 ```
 $wget "https://cdn.uvdesk.com/uvdesk/downloads/opensource/uvdesk-community-current-stable.zip" -P ./src
 
-$unzip src/uvdesk-community-current-stable.zip
+$unzip src/uvdesk-community-current-stable.zip -d ./src
 ```
 
 4. Build your docker
@@ -34,7 +34,7 @@ $docker-compose up -d
 
 5. Get into the shell of uvdesk container
 ```
-$docker exec -d uvdesk_uvdesk_web_1 sh
+$docker exec -i -t {container_ID} bash
 ```
 
 6. Prepare your database and installation
@@ -43,15 +43,12 @@ $docker exec -d uvdesk_uvdesk_web_1 sh
 
 $php /var/www/html/uvdesk-community-v1.0.12/bin/console uvdesk:configure-helpdesk
 ```
-7. Following steps can refer the installation guide of uvdesk (step2)
 
-	https://docs.uvdesk.com/uvdemo/installation/installation-ubuntu.html
-
-8. Mail service setup
+7. Mail service setup
 
 	https://www.uvdesk.com/en/blog/setup-mailbox-uvdesk-open-source-helpdesk/
 
-9. Trouble shooting
+8. Trouble shooting
 
 	If you encounter some error, you can refer this link https://www.uvdesk.com/en/blog/open-source-helpdesk-installation-on-ubuntu-uvdesk/
     
