@@ -11,8 +11,8 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: uvdeskdb
-      MYSQL_DATABASE: uvdeskdb
+      MYSQL_ROOT_PASSWORD: {root user password}
+      MYSQL_DATABASE: {name of database}
 
     ports:
       - "0.0.0.0:3306:3306"
